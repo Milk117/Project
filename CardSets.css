@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header-container {
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease; 
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #00ff00, 0 0 14px #00ff00; 
+}
+
+#clock {
+    background-color: #000;
+    color: #00ff00;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#search-widget {
+    display: none;
+    margin-left: 10px;
+}
+
+#search-widget.active {
+    display: block;
+}
